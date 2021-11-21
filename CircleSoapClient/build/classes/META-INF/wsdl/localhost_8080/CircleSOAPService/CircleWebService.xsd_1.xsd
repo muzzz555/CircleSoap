@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.3 (RELEASE-2.4.3-ad3323c; 2019-01-21T17:46:06+0000) JAXWS-RI/2.3.2 JAXWS-API/2.3.2 JAXB-RI/2.3.2 JAXB-API/2.3.2 git-revision#unknown. --><xs:schema xmlns:tns="http://Services/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://Services/">
+
+<xs:element name="calcirclearea" type="tns:calcirclearea"/>
+
+<xs:element name="calcircleareaResponse" type="tns:calcircleareaResponse"/>
+
+<xs:element name="calcircumference" type="tns:calcircumference"/>
+
+<xs:element name="calcircumferenceResponse" type="tns:calcircumferenceResponse"/>
+
+<xs:complexType name="calcircumference">
+<xs:sequence>
+<xs:element name="radius" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="calcircumferenceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="calcirclearea">
+<xs:sequence>
+<xs:element name="radius" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="calcircleareaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
